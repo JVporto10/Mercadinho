@@ -8,10 +8,10 @@ import jakarta.persistence.*;
 public class MercadinhoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-    String nome;
-    String categoria;
-    double valor;
+    private long id;
+    private String nome;
+    private String categoria;
+    private double valor;
 
     public MercadinhoModel(){
 
