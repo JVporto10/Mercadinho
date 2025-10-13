@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MercadinhoController {
 
     @GetMapping("/BemVindo")
-    public String bemVindo (){
+    public String bemVindo() {
         return "primeiro getMapping, bem vindo.";
     }
 }
