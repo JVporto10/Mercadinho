@@ -1,6 +1,9 @@
 package com._irmaos.mercadinho.Produtos;
 
+import com._irmaos.mercadinho.Pedidos.PedidosModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 // trasnfroma uma classe em uma entidade do banco de dados
 @Entity
@@ -12,6 +15,9 @@ public class ProdutosModel {
     private String nome;
     private String categoria;
     private double valor;
+
+    @ManyToMany(mappedBy = "Produtos")
+    private List<PedidosModel> pedidosModelList;
 
     public ProdutosModel(){
 
