@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin("*")
 @RestController
 @RequestMapping
-public class MercadinhoController {
+public class ProdutosController {
 
     @GetMapping("/")
     public String index() {

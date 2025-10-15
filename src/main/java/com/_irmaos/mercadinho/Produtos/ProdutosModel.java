@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 // trasnfroma uma classe em uma entidade do banco de dados
 @Entity
 @Table(name = "tb_Produtos")
-public class MercadinhoModel {
+public class ProdutosModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -13,11 +13,11 @@ public class MercadinhoModel {
     private String categoria;
     private double valor;
 
-    public MercadinhoModel(){
+    public ProdutosModel(){
 
     }
 
-    public MercadinhoModel(String nome, String categoria, double valor) {
+    public ProdutosModel(String nome, String categoria, double valor) {
         this.nome = nome;
         this.categoria = categoria;
         this.valor = valor;
