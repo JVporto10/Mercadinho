@@ -1,4 +1,4 @@
-package com._irmaos.mercadinho;
+package com._irmaos.mercadinho.Produtos;
 
 import jakarta.persistence.*;
 
@@ -16,6 +16,7 @@ public class MercadinhoModel {
     public MercadinhoModel(){
 
     }
+
     public MercadinhoModel(String nome, String categoria, double valor) {
         this.nome = nome;
         this.categoria = categoria;

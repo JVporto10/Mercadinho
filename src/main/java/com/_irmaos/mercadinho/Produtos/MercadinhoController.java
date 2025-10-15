@@ -1,4 +1,4 @@
-package com._irmaos.mercadinho;
+package com._irmaos.mercadinho.Produtos;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
